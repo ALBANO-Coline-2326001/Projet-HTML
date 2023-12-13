@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" >
+    <!-- Ajout d'une description (a completer) -->
+    <meta name="description" content="Les Princes du monde entier" >
     <title>Les Princes du monde entier : </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="splacement.css">
+    <link id="css" rel="stylesheet" href="styleclair.css">
 
 </head>
 <body>
+
+<!-- crer  un bouton -->
+<button id="theme">Mode Sombre</button>
+
+
+
+
+<!-- Menu déroulant -->
+<nav>
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="prince.html">Les Princes</a></li>
+        <li><a href="princesse.html">Les Princesses</a></li>
+    </ul>
+</nav>
+
+
+
 <h1>Les Princes : </h1>
 <h2>I - Le prince d'Angleterre</h2>
 
@@ -70,6 +90,20 @@
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/William_Submarines_Crop.png/200px-William_Submarines_Crop.png" alt="Prince William, Duc de Cambridge" title="Prince William, Duc de Cambridge" />
 
+<!-- Formulaire pour récuperer l'avis des gens -->
+<form action="avis">
+    <p>
+        <label for="pseudo">Pseudo :</label>
+        <input type="text" name="pseudo" id="pseudo" />
+        <br />
+        <label for="message">Message :</label>
+        <textarea name="message" id="message"></textarea>
+        <br />
 
+        <input type="submit" value="Envoyer" />
+    </p>
+</form>
+
+<script src="script.js" defer></script>
 </body>
 </html>
